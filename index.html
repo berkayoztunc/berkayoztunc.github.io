@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Berkay Öztunç</title>
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap@next/dist/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+
+  <!-- Add this after vue.js -->
+  <script src="https://unpkg.com/vue@2.3.3"></script>
+  <script src="https://unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="https://unpkg.com/tether@latest/dist/js/tether.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+          <div v-for="item in repo" class="col-6 offset-3">
+            <b-card>
+            <b-media>
+              <img slot="aside" :src="item.actor.avatar_url" height="50px">
+
+              <h5 class="mt-0">{{ item.actor.login }}</h5>
+              <p>{{item.repo.name}} <a :href="item.repo.url">Go</a></p>
+              <div>
+                <p>{{ item.payload.description}}</p>
+                <p v-for="items in item.payload.commits">
+                    {{ items.message}}
+                </p>
+              </div>
+
+            </b-media>
+          </b-card>
+            
+          </div>
+    </div>
+  </div>
+
+</body>
+<script>
+  new Vue({
+    el: '#app',
+    data(){
+        return {
+          url :'https://api.github.com/users/berkayoztunc/events',
+          repo : []
+        }
+    },
+    mounted(){
+        const vm = this;
+        axios.get(this.url)
+          .then(function (response) {
+            vm.repo = response.data
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    }
+  })
+
+</script>
+
+</html>
