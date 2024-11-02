@@ -1,2 +1,2 @@
 # berkayoztunc.github.io
-git hub side
+My personal website. To be used as CV
