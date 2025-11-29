@@ -1,163 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <meta charset="utf-8">
-    <title>Berkay Öztunç</title>
-    <title>Berkay Öztunç</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berkay Öztunç | Software Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandOrange: '#FF9900', 
+                        brandBlack: '#1A1A1A',
+                        offWhite: '#F9FAFB',
+                        paper: '#FFFDF5'
+                    },
+                    fontFamily: {
+                        doodle: ['"Permanent Marker"', 'cursive'],
+                        body: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; width: 700px; margin: 0 auto; }
+        /* El çizimi stilleri */
+        .doodle-box {
+            background: white;
+            border: 3px solid #1A1A1A;
+            border-radius: 2px 255px 3px 25px / 255px 5px 225px 5px;
+            box-shadow: 6px 6px 0px #1A1A1A;
+            transition: all 0.3s ease;
+        }
+        .doodle-box:hover {
+            box-shadow: 10px 10px 0px #FF9900;
+            transform: translate(-2px, -2px);
+        }
+        .highlight-marker {
+            background: linear-gradient(120deg, #ff990066 0%, #ff990066 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 88%;
+        }
+        .timeline-line {
+            border-left: 4px dashed #1A1A1A;
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
-<body>
-    <img src="https://avatars0.githubusercontent.com/u/9355585" alt="Berkay Öztunç" style="height: 100px;">
-    <h1>Hello, I'm Berkay</h1>
-    <p> a software engineer and full-stack developer at Geniousoft. Over the past few years, I’ve specialized in the Solana network, most recently developing "Sparkium" for the Radar Hackathon. My experience spans custom software solutions for companies across diverse industries, as well as expertise in Web3 through projects involving mining rigs, rental systems, smart contracts, and tokens.
-    </p>
-    <p>Since 2011, I've been passionate about software. During university, I worked in the IT department, helping develop our student information system. My journey continued in Istanbul, where I built over 50 corporate websites, then in e-commerce and mobile development roles, where I delivered two major applications as a core developer. Five years ago, I joined Geniousoft, where I tailor solutions to meet unique client needs and began my deep dive into the blockchain space.
-    </p>
-    <p>As a Superteam Türkiye member, I’ve been contributing to the Solana ecosystem for nearly 1.5 years, providing mentorship and organizing Solana events in Mersin for the past year. My work in hackathons includes a project on Solana that received special recognition and an EVM-based project on Oasis (Paratime) that won a hackathon and grant.
-    </p>
-    <p>I'm proficient in Git and skilled in remote collaboration, primarily working on Discord. With a quick adaptability to new languages and tools, I deliver solutions effectively. My English is strong in listening, with good reading and writing skills and intermediate speaking ability.
-    </p>
-    Born in 1993, I'm married and a proud <a href="https://www.instagram.com/fino.sushi/">dog (Sushi)</a> owner.
-  
+<body class="bg-paper font-body text-brandBlack overflow-x-hidden selection:bg-brandOrange selection:text-white">
 
-    <h3>Experience</h3>
-    <ul>
-        <li>Full-stack Developer at <a href="https://geniousoft.com/en">Geniousoft</a>  </li>
-        <li>Radar hackathon application <a href="https://sparkium.app/">Sparkium</a></li>
-        <li>Full-stack Developer for Kismetim App</li>
-        <li>Full-stack Developer for Accurate Analytics</li>
-        <li>Full-stack Developer for Vitruvians Tools ( <a href="https://x.com/OasisProtocol/status/1533871350045192192">Hackathon winner</a> )</li>
-        <li>Full-stack Developer at Sparkium</li>
-        <li>Developer of 4 Independent Game Projects</li>
-        <li>Developer of over 100+ Websites</li>
-    </ul>
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+        <div class="text-2xl font-doodle transform -rotate-2 border-b-4 border-brandOrange">
+            BERKAY OZTUNC
+        </div>
+        <div class="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-wide">
+            <a href="#about" class="hover:text-brandOrange transition">About</a>
+            <a href="#experience" class="hover:text-brandOrange transition">Experience</a>
+            <a href="#projects" class="hover:text-brandOrange transition">Projects</a>
+            <a href="#achievements" class="hover:text-brandOrange transition">Awards</a>
+        </div>
+        <a href="mailto:mailberkayoztunc@gmail.com" class="doodle-box px-5 py-2 font-bold text-sm bg-brandBlack text-white hover:text-white">
+            CONTACT ME
+        </a>
+    </nav>
 
-    <h3>Programming Languages</h3>
-    <ul>
-        <li>PHP</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Python</li>
-        <li>C#(Only Unity)</li>
-        <li>Bash</li>
-        <li>SQL</li>
-        <li>Rust</li>
-    </ul>
+    <!-- Header / Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-3/5 space-y-6">
+            <span class="font-doodle text-brandOrange text-xl">Hello World! 👋</span>
+            <h1 class="text-5xl md:text-7xl font-black leading-tight text-brandBlack">
+                I'm <span class="relative">Berkay<svg class="absolute w-full h-3 -bottom-1 left-0 text-brandOrange" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="none"/></svg></span>, <br>
+                Software Engineer.
+            </h1>
+            <h2 class="text-2xl font-bold text-gray-600">
+                <i class="fas fa-map-marker-alt text-brandOrange mr-2"></i>Mersin, Turkey
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed border-l-4 border-brandOrange pl-4">
+                I have been developing software for about <strong>4 years</strong>. I have taken part in more than <strong>100 projects</strong>. 
+                I am currently working as a Software Engineer at <span class="font-bold underline decoration-brandOrange">Geniousoft</span>. 
+                I am also a member of <span class="font-bold">Superteam Turkey</span>.
+                My main focus is on <span class="highlight-marker font-bold">Web3 & Solana</span> technologies.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="https://github.com/berkayoztunc" target="_blank" class="doodle-box bg-white px-6 py-3 font-bold flex items-center gap-2">
+                    <i class="fab fa-github text-xl"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/berkayoztunc/" target="_blank" class="doodle-box bg-blue-600 text-white border-blue-800 px-6 py-3 font-bold flex items-center gap-2">
+                    <i class="fab fa-linkedin text-xl"></i> LinkedIn
+                </a>
+                <a href="https://twitter.com/berkayoztunc" target="_blank" class="doodle-box bg-sky-400 text-white border-sky-600 px-6 py-3 font-bold flex items-center gap-2">
+                    <i class="fab fa-twitter text-xl"></i> Twitter
+                </a>
+            </div>
+        </div>
 
-    <h3>Technologies & Frameworks</h3>
-    
-    <h4>Backend Frameworks & Tools</h4>
-    <ul>
-        <li>Laravel (4.2 to latest)</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>GraphQL</li>
-        <li>RESTful APIs</li>
-        <li>WebSocket</li>
-    </ul>
+        <div class="md:w-2/5 flex justify-center relative">
+            <!-- Dekoratif Çizimler -->
+            <svg class="absolute -top-10 -right-5 w-20 h-20 text-brandOrange animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            
+            <div class="w-72 h-72 md:w-96 md:h-96 bg-gray-200 border-4 border-black rounded-full overflow-hidden shadow-[12px_12px_0px_0px_#FF9900] relative z-10">
+                <img src="https://avatars.githubusercontent.com/u/34306806?v=4" alt="Berkay Öztunç" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+            </div>
+        </div>
+    </section>
 
-    <h4>Frontend Technologies</h4>
-    <ul>
-        <li>Vue.js</li>
-        <li>Nuxt.js</li>
-        <li>Vite</li>
-        <li>Webpack</li>
-        <li>Tailwind CSS</li>
-        <li>Bootstrap</li>
-        <li>SASS/SCSS</li>
-        <li>Vuetify</li>
-    </ul>
+    <!-- Experience Timeline Section (Tüm Deneyimler) -->
+    <section id="experience" class="py-20 bg-white border-y-4 border-black relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-doodle text-center mb-16">MY <span class="text-brandOrange">JOURNEY</span></h2>
+            
+            <div class="relative timeline-line ml-4 md:ml-0 md:pl-8 space-y-12">
+                
+                <!-- Experience 1 -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="absolute -left-[41px] md:-left-[43px] bg-brandOrange w-6 h-6 rounded-full border-4 border-black z-10"></div>
+                    <div class="doodle-box p-6 md:ml-10">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-black">Software Engineer</h3>
+                            <span class="text-sm font-bold text-brandOrange bg-black px-2 py-1 rounded">2022 - Present</span>
+                        </div>
+                        <div class="text-gray-600 font-bold mb-4">@ Geniousoft</div>
+                        <p class="text-gray-700">
+                            Developing scalable web applications and software solutions. 
+                            Active role in backend architecture and frontend integration.
+                        </p>
+                    </div>
+                </div>
 
-    <h4>Mobile & Desktop Development</h4>
-    <ul>
-        <li>Cordova</li>
-        <li>Capacitor</li>
-        <li>Electron</li>
-        <li>Progressive Web Apps (PWA)</li>
-    </ul>
+                <!-- Experience 2 -->
+                <div class="relative pl-8 md:pl-0">
+                    <div class="absolute -left-[41px] md:-left-[43px] bg-white w-6 h-6 rounded-full border-4 border-black z-10"></div>
+                    <div class="doodle-box p-6 md:ml-10">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-xl font-black">Full Stack Developer</h3>
+                            <span class="text-sm font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">2020 - 2022</span>
+                        </div>
+                        <div class="text-gray-600 font-bold mb-4">@ Freelance</div>
+                        <p class="text-gray-700">
+                            Delivered 100+ web projects for various clients. 
+                            Specialized in PHP, Laravel, and custom CMS solutions.
+                            Mobile game development with Unity/C#.
+                        </p>
+                    </div>
+                </div>
 
-    <h4>Database & Caching</h4>
-    <ul>
-        <li>MongoDB</li>
-        <li>MySQL</li>
-        <li>PostgreSQL</li>
-        <li>Redis</li>
-        <li>SQLite</li>
-        <li>Elasticsearch</li>
-    </ul>
+            </div>
+        </div>
+    </section>
 
-    <h4>Cloud & Infrastructure</h4>
-    <ul>
-        <li>Firebase (Authentication, Firestore, Functions, Hosting)</li>
-        <li>Supabase</li>
-        <li>Docker</li>
-        <li>Portainer</li>
-        <li>Graphana</li>
-        <li>Nginx</li>
-        <li>CI/CD</li>
-        <li>ChirpStack LoRaWAN® Network Server</li>
-        <li>Matrix</li>
-    </ul>
+    <!-- Tech Stack Grid -->
+    <section class="py-16 bg-brandBlack text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-doodle mb-10 text-white">TECHNOLOGIES</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">HTML5 & CSS3</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">JavaScript (ES6+)</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">React.js</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">Next.js</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">TypeScript</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">Node.js</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">PHP & Laravel</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">Rust (Solana)</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">Solidity</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">Docker</span>
+                <span class="border-2 border-white px-4 py-2 rounded-full font-bold hover:bg-brandOrange hover:border-brandOrange transition cursor-default">Git/GitHub</span>
+            </div>
+        </div>
+    </section>
 
-    <h4>Web3 & Blockchain</h4>
-    <ul>
-        <li>Anchor</li>
-        <li>Solidity</li>
-        <li>Web3.js</li>
-        <li>Ethers.js</li>
-        <li>Hardhat</li>
-        <li>Truffle</li>
-        <li>IPFS</li>
-    </ul>
+    <!-- Projects Section (Detaylı) -->
+    <section id="projects" class="py-20 max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-doodle text-center mb-4">SELECTED <span class="text-brandOrange">WORKS</span></h2>
+        <p class="text-center text-gray-500 mb-12">Some of the projects I've built or contributed to.</p>
 
-    <h4>Testing & Quality Assurance</h4>
-    <ul>
-        <li>Mocha</li>
-        <li>PHPUnit</li>
-        <li>Selenium</li>
-    </ul>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1: Sparkium -->
+            <div class="doodle-box p-0 flex flex-col h-full">
+                <div class="bg-gray-100 p-4 border-b-2 border-black flex justify-center items-center h-48">
+                    <span class="text-4xl">⚡</span> <!-- Placeholder for Project Image -->
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-black mb-2">Sparkium</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-1">
+                        A centralized exchange simulation on Solana. Winner of the Radar Hackathon.
+                        Allows users to experience trading mechanics in a risk-free environment.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded">Solana</span>
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">Rust</span>
+                        <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">React</span>
+                    </div>
+                    <a href="#" class="text-brandBlack font-bold hover:text-brandOrange hover:underline">View Project -></a>
+                </div>
+            </div>
 
-    <h4>AI & Machine Learning</h4>
-    <ul>
-        <li>LLAMA</li>
-        <li>OpenAI API Integration</li>
-        <li>Hugging Face Transformers</li>
-    </ul>
+            <!-- Project 2: Vitruvians Tools -->
+            <div class="doodle-box p-0 flex flex-col h-full">
+                <div class="bg-gray-100 p-4 border-b-2 border-black flex justify-center items-center h-48">
+                    <span class="text-4xl">🛠️</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-black mb-2">Vitruvians Tools</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-1">
+                        Comprehensive toolset for NFT holders. Includes rarity sniper, portfolio tracker, and staking interfaces.
+                        Hackathon winning project.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Node.js</span>
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Web3.js</span>
+                    </div>
+                    <a href="#" class="text-brandBlack font-bold hover:text-brandOrange hover:underline">View Project -></a>
+                </div>
+            </div>
 
-    <h3>Additional Skills</h3>
-    <ul>
-        <li>High Availability Server Configuration</li>
-        <li>System Administration (AWS, IBM Bare Metal, DigitalOcean)</li>
-        <li>Domain Security and Enterprise Email Setup</li>
-        <li>Performance Optimization</li>
-        <li>Security Best Practices</li>
-        <li>API Design</li>
-        <li>LoR@ Network</li>
-    </ul>
+            <!-- Project 3: Erobe -->
+            <div class="doodle-box p-0 flex flex-col h-full">
+                <div class="bg-gray-100 p-4 border-b-2 border-black flex justify-center items-center h-48">
+                    <span class="text-4xl">🎮</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-black mb-2">Erobe</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-1">
+                        A mobile puzzle/adventure game available on Google Play Store. 
+                        Designed levels and programmed game logic.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                        <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">C#</span>
+                        <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">Unity</span>
+                    </div>
+                    <a href="#" class="text-brandBlack font-bold hover:text-brandOrange hover:underline">View on Play Store -></a>
+                </div>
+            </div>
 
-    <h3>Project Expertise</h3>
-    <ul>
-        <li>Web3-based UI and Smart Contracts</li>
-        <li>Express-based Node.js APIs</li>
-        <li>Node.js Applications</li>
-        <li>Electron-based Desktop Applications</li>
-        <li>Cordova & Capacitor-based Mobile Applications</li>
-        <li>Laravel Projects (experienced since version 4.2)</li>
-        <li>Full-stack Web Applications & Websites</li>
-    </ul>
-    <p>And many technologies I've used but don't remember.</p>
-    <h2>Contact Information</h2>
-    <p>Email: mailberkayoztunc@gmail.com</p>
-    <a href="https://www.linkedin.com/in/berkayoztunc/">LinkedIn</a><br>
-    <a href="https://www.instagram.com/berkayoztunc/">Instagram</a><br>
-    <a href="https://twitter.com/Berkayoztunc">Twitter </a><br>
-    <a href="https://twitter.com/whitemoondev">Twitter (Web3)</a><br>
-    <a href="https://github.com/berkayoztunc">Github </a>
-    <p>Telegram: @whitemoondev</p>
-    <p>Note: I don't use Arch Linux</p>
+            <!-- Project 4: Gamer Arena -->
+            <div class="doodle-box p-0 flex flex-col h-full">
+                <div class="bg-gray-100 p-4 border-b-2 border-black flex justify-center items-center h-48">
+                    <span class="text-4xl">🏆</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col">
+                    <h3 class="text-2xl font-black mb-2">Gamer Arena</h3>
+                    <p class="text-sm text-gray-600 mb-4 flex-1">
+                        Competitive gaming platform development. Contributed to tournament systems and user profile management.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Laravel</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: 100+ Websites -->
+            <div class="doodle-box p-0 flex flex-col h-full bg-brandOrange text-white border-brandBlack">
+                <div class="p-6 flex flex-col justify-center h-full text-center">
+                    <h3 class="text-5xl font-black mb-2">100+</h3>
+                    <p class="font-bold text-lg mb-4">Web Projects</p>
+                    <p class="text-sm opacity-90">
+                        Corporate websites, E-commerce solutions, and custom CMS panels built for various clients over 4 years.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Achievements / Certificates Section -->
+    <section id="achievements" class="bg-paper py-16 border-t-4 border-dashed border-gray-300">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-doodle text-center mb-10">HONORS & <span class="text-brandOrange">AWARDS</span></h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white border-2 border-black p-4 flex items-center shadow-lg hover:scale-[1.01] transition">
+                    <div class="text-3xl mr-4">🥇</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Radar Hackathon Winner</h4>
+                        <p class="text-sm text-gray-600">Global Solana Hackathon - Sparkium Project</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white border-2 border-black p-4 flex items-center shadow-lg hover:scale-[1.01] transition">
+                    <div class="text-3xl mr-4">🥈</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Hyperdrive Hackathon</h4>
+                        <p class="text-sm text-gray-600">Solana Ecosystem Participant</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border-2 border-black p-4 flex items-center shadow-lg hover:scale-[1.01] transition">
+                    <div class="text-3xl mr-4">🎓</div>
+                    <div>
+                        <h4 class="font-bold text-lg">Game Development Certificate</h4>
+                        <p class="text-sm text-gray-600">Unity & C# Mastery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandBlack text-white py-12 mt-12 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-doodle text-3xl mb-6">Let's build something <span class="text-brandOrange">awesome.</span></h2>
+            
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="mailto:mailberkayoztunc@gmail.com" class="text-4xl hover:text-brandOrange hover:-translate-y-2 transition"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/berkayoztunc" class="text-4xl hover:text-brandOrange hover:-translate-y-2 transition"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/berkayoztunc/" class="text-4xl hover:text-brandOrange hover:-translate-y-2 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/berkayoztunc" class="text-4xl hover:text-brandOrange hover:-translate-y-2 transition"><i class="fab fa-twitter"></i></a>
+                <a href="https://t.me/whitemoondev" class="text-4xl hover:text-brandOrange hover:-translate-y-2 transition"><i class="fab fa-telegram"></i></a>
+            </div>
+            
+            <p class="text-gray-500 text-sm">
+                &copy; 2024 Berkay Öztunç. All rights reserved.<br>
+                Designed with "Tech & Focus" concept.
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
