@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Berkay Öztunç | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&family=Gochi+Hand&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -33,49 +36,64 @@
         .hover-card {
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
+
         .hover-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
         }
+
         .rotate-hover:hover {
             transform: rotate(3deg) scale(1.05);
         }
-        
+
         /* Custom Doodle SVG Styles */
         .svg-doodle {
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
             animation: draw 2s forwards;
         }
+
         @keyframes draw {
-            to { stroke-dashoffset: 0; }
+            to {
+                stroke-dashoffset: 0;
+            }
         }
-        
+
         /* Grid Layout */
         .bento-grid {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             gap: 1.5rem;
         }
+
         @media (min-width: 768px) {
             .bento-grid {
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: auto auto;
             }
-            .span-2 { grid-column: span 2; }
-            .row-span-2 { grid-row: span 2; }
+
+            .span-2 {
+                grid-column: span 2;
+            }
+
+            .row-span-2 {
+                grid-row: span 2;
+            }
         }
     </style>
 </head>
+
 <body class="bg-surface text-dark font-sans selection:bg-accent selection:text-white">
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 top-0 left-0 bg-surface/80 backdrop-blur-md border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight">berkayoztunc<span class="text-accent">.github.io</span></a>
+            <a href="#" class="text-xl font-bold tracking-tight">berkayoztunc<span
+                    class="text-accent">.github.io</span></a>
             <div class="hidden md:flex gap-8 text-sm font-medium text-gray-500">
             </div>
-            <a href="mailto:mailberkayoztunc@gmail.com" class="bg-dark text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-accent transition shadow-doodle border border-dark">
+            <a href="mailto:mailberkayoztunc@gmail.com"
+                class="bg-dark text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-accent transition shadow-doodle border border-dark">
                 Let's Talk
             </a>
         </div>
@@ -88,7 +106,8 @@
                 <!-- Doodle Arrow -->
                 <div class="absolute -top-8 -left-8 text-accent transform -rotate-12 hidden md:block">
                     <span class="font-doodle text-xl">Hi there!</span>
-                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
                         <path d="M10,10 Q30,30 40,40 M40,40 L25,40 M40,40 L40,25" />
                     </svg>
                 </div>
@@ -98,27 +117,48 @@
                     <span class="relative inline-block">
                         <span class="relative z-10">Code & Focus.</span>
                         <!-- Doodle Underline -->
-                        <svg class="absolute bottom-1 left-0 w-full h-3 z-0 text-accent opacity-60" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/200/svg"><path d="M2.00026 6.99997C52.0003 2.99999 149.5 -2.49998 198 7.99997" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                        <svg class="absolute bottom-1 left-0 w-full h-3 z-0 text-accent opacity-60" viewBox="0 0 200 9"
+                            fill="none" xmlns="http://www.w3.org/200/svg">
+                            <path d="M2.00026 6.99997C52.0003 2.99999 149.5 -2.49998 198 7.99997" stroke="currentColor"
+                                stroke-width="3" stroke-linecap="round" />
+                        </svg>
                     </span>
                 </h1>
                 <p class="text-lg text-gray-600 max-w-lg leading-relaxed mb-8">
-                    I have been developing software for about <strong>4 years</strong> and have contributed to more than <strong>100 projects</strong>.
-                    Currently, I work as a Software Engineer at <span class="font-bold underline decoration-accent">Geniousoft</span> and am also a member of <span class="font-bold">Superteam Turkey</span>.
-                    My main focus is on <span class="bg-orange-100 text-orange-800 px-2 py-0.5 rounded font-doodle font-bold">Web3 &amp; Solana</span> technologies and scalable full-stack applications.
+                    I have been developing software for about <strong>4 years</strong> and have contributed to more than
+                    <strong>100 projects</strong>.
+                    Currently, I work as a Software Engineer at <span
+                        class="font-bold underline decoration-accent">Geniousoft</span> and am also a member of <span
+                        class="font-bold">Superteam Turkey</span>.
+                    My main focus is on <span
+                        class="bg-orange-100 text-orange-800 px-2 py-0.5 rounded font-doodle font-bold">Web3 &amp;
+                        Solana</span> technologies and scalable full-stack applications.
                 </p>
 
                 <div class="flex flex-wrap gap-4">
                     <div class="flex  gap-2 mt-2">
-                        <a href="https://www.linkedin.com/in/berkayoztunc/" class="flex items-center gap-2 text-blue-700 font-bold hover:underline">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <a href="https://www.linkedin.com/in/berkayoztunc/"
+                            class="flex items-center gap-2 text-blue-700 font-bold hover:underline">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
                             LinkedIn
                         </a>
-                        <a href="https://twitter.com/Berkayoztunc" class="flex items-center gap-2 text-blue-500 font-bold hover:underline">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.69.11 1.02C7.69 5.4 4.07 3.7 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 0 1 .96 6.1v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.15 2.97 4.05 3A9.06 9.06 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 23 3z"/></svg>
+                        <a href="https://twitter.com/Berkayoztunc"
+                            class="flex items-center gap-2 text-blue-500 font-bold hover:underline">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.69.11 1.02C7.69 5.4 4.07 3.7 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 0 1 .96 6.1v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.15 2.97 4.05 3A9.06 9.06 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 23 3z" />
+                            </svg>
                             Twitter
                         </a>
-                        <a href="https://github.com/berkayoztunc" class="flex items-center gap-2 text-gray-800 font-bold hover:underline">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <a href="https://github.com/berkayoztunc"
+                            class="flex items-center gap-2 text-gray-800 font-bold hover:underline">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
                             Github
                         </a>
                     </div>
@@ -128,12 +168,16 @@
             <!-- Profile Image Area -->
             <div class="md:w-2/5 flex justify-center relative">
                 <!-- Abstract Background Shapes -->
-                <div class="absolute inset-0 bg-accent/10 rounded-full blur-3xl transform translate-x-4 translate-y-4"></div>
+                <div class="absolute inset-0 bg-accent/10 rounded-full blur-3xl transform translate-x-4 translate-y-4">
+                </div>
                 <div class="relative w-64 h-64 md:w-80 md:h-80">
-                    <img src="/pp2.png" class="w-full h-full object-cover rounded-[2rem] shadow-2xl rotate-3 border-2 border-white" alt="Berkay">
-                    
+                    <img src="/pp2.png"
+                        class="w-full h-full object-cover rounded-[2rem] shadow-2xl rotate-3 border-2 border-white"
+                        alt="Berkay">
+
                     <!-- Floating Badge -->
-                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-soft border border-gray-100 flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-soft border border-gray-100 flex items-center gap-3 animate-bounce"
+                        style="animation-duration: 3s;">
                         <span class="text-2xl">🇹🇷</span>
                         <div>
                             <p class="text-xs text-gray-400 font-bold uppercase">Location</p>
@@ -145,206 +189,234 @@
         </div>
     </section>
     <!-- Journey Timeline Section -->
-   
+
 
     <!-- Bento Grid Section (Projects & Info) -->
     <section id="work" class="py-10 px-6 max-w-6xl mx-auto">
         <div class="flex items-end justify-between mb-8">
-            <h2 class="text-3xl font-bold">Selected 
- <span class="font-doodle text-accent">Work</span></h2>
+            <h2 class="text-3xl font-bold">Selected
+                <span class="font-doodle text-accent">Work</span>
+            </h2>
             <span class="text-sm text-gray-500 font-doodle transform rotate-2">Scroll for more -></span>
         </div>
 
         <div class="bento-grid">
-         
-                <!-- Sparkium Project -->
-                <div class="span-2 bg-card rounded-3xl p-8 border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-10">Radar Hackathon Mention</div>
-                    <div class="flex flex-col h-full justify-between relative z-10">
-                        <div>
-                            <div class="flex items-center gap-2 mb-4">
-                                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-bold">Solana</span>
-                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold">Rust</span>
-                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-bold">React</span>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-2">Sparkium</h3>
-                            <p class="text-gray-500 text-sm max-w-md">
-                                A centralized exchange simulation on Solana. Winner of the Radar Hackathon. Allows users to experience trading mechanics in a risk-free environment.
-                            </p>
-                        </div>
-                        <a href="https://sparkium.app/" class="inline-flex items-center gap-2 font-bold text-sm mt-6 group-hover:text-accent transition" target="_blank">
-                            View Project <span class="text-lg">→</span>
-                        </a>
-                    </div>
-                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-tl from-indigo-500 to-transparent rounded-full opacity-10 group-hover:scale-150 transition duration-500"></div>
-                </div>
 
-                <!-- Vitruvians Tools -->
-                <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="bg-purple-100 text-purple-700 p-3 rounded-xl">
-                            <span class="text-4xl">🛠️</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold mb-1">Vitruvians Tools</h3>
-                    <p class="text-xs text-gray-500 mb-3">Comprehensive toolset for NFT holders. Includes rarity sniper, portfolio tracker, and staking interfaces. Hackathon winning project.</p>
-                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
-                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Node.js</span>
-                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Web3.js</span>
-                    </div>
-                    <a href="https://x.com/OasisProtocol/status/1533871350045192192" class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">Hackathon Winner -></a>
-                </div>
-
-                <!-- Erobe Game -->
-                <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="bg-green-100 text-green-700 p-3 rounded-xl">
-                            <span class="text-4xl">🌟</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold mb-1">Sparkium</h3>
-                    <p class="text-xs text-gray-500 mb-3">The Sparkium Program is a Solana-based decentralized application that allows users to create and manage campaigns for content submission and approval</p>
-                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
-                        <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">VUE.js</span>
-                        <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">RUST</span>
-                        <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">TS</span>
-                    </div>
-                    <a href="https://x.com/sparkiumapp" class="text-brandBlack font-bold hover:text-accent hover:underline">View</a>
-                </div>
-
-                <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="bg-orange-100 text-red-700 p-3 rounded-xl">
-                            <span class="text-4xl">🏆</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold mb-1">p402</h3>
-                    <p class="text-xs text-gray-500 mb-3">Monetize Your APIs with Solana Payments. Connect your Solana wallet, register your APIs, and start earning SOL for every request.
-No setup fees, no monthly subscriptions - just pay-per-use on Solana.</p>
-                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Vue</span>
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Cloudworker</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
-                    </div>
-                    <a href="https://p402.store/#/" class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">View detail</a>
-                </div>
-               
-
-                <!-- Suiwatch -->
-                <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="bg-red-100 text-red-700 p-3 rounded-xl">
-                            <span class="text-4xl">🏆</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold mb-1">Suiwatch</h3>
-                    <p class="text-xs text-gray-500 mb-3">A portfolio tracking tool for Sui blockchain assets. Built with Vue for real-time updates.</p>
-                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Vue</span>
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Cloudworker</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
-                    </div>
-                    <a href="https://x.com/omr_dev/status/1982569878721835305?s=20" class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">Hackathon Winner -></a>
-                </div>
-
-                <!-- Minihub -->
-                <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="bg-red-100 text-red-700 p-3 rounded-xl">
-                            <span class="text-4xl">🏆</span>
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-bold mb-1">Minihub</h3>
-                    <p class="text-xs text-gray-500 mb-3">A HR smart contract based recruitment platform on Sui blockchain. Built with React and Move.</p>
-                    <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">React</span>
-                        <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Move</span>
-                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
-                    </div>
-                    <a href="https://x.com/WhiteMoonDev/status/1992883818982953223?s=20" class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">Hackathon Winner -></a>
-                </div>
-
-                <!-- 100+ Websites -->
-                <div class="span-2 bg-accent/5 rounded-3xl p-8 border border-accent/10 flex items-center justify-around text-center relative overflow-hidden">
-                    <div class="absolute -left-10 top-0 w-32 h-32 border-4 border-dashed border-accent/20 rounded-full animate-[spin_10s_linear_infinite]"></div>
-                    <div class="relative z-10">
-                        <div class="text-4xl font-extrabold text-accent">100+</div>
-                        <div class="text-xs text-gray-600 font-bold uppercase mt-1">Web Projects</div>
-                        <p class="text-xs text-gray-500 mt-2">Corporate websites, E-commerce solutions, and custom CMS panels built for various clients over 4 years.</p>
-                    </div>
-                    <div class="w-px h-12 bg-gray-300"></div>
-                    <div class="relative z-10">
-                        <div class="text-4xl font-extrabold text-dark">12</div>
-                        <div class="text-xs text-gray-600 font-bold uppercase mt-1">Years Experience</div>
-                    </div>
-                    <div class="w-px h-12 bg-gray-300"></div>
-                     <div class="relative z-10">
-                        <div class="text-4xl font-extrabold text-dark">5</div>
-                        <div class="text-xs text-gray-600 font-bold uppercase mt-1">Hackathon Wins</div>
-                    </div>
-                </div>
-
-        </div>
-           <!-- Minimal Tech Stack Grid -->
-            <div class="span-2 mb-6 bg-card rounded-3xl p-8 border border-gray-100 hover-card group mt-5">
-                <h3 class="text-xl font-doodle text-accent mb-4">Technologies & Frameworks</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Sparkium Project -->
+            <div
+                class="span-2 bg-card rounded-3xl p-8 border border-gray-100 hover-card relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-xl z-10">
+                    Radar Hackathon Mention</div>
+                <div class="flex flex-col h-full justify-between relative z-10">
                     <div>
-                        <h4 class="font-doodle text-orange-600 mb-2 text-base">Backend</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-orange-50 text-orange-800 px-2 py-0.5 rounded font-medium">Laravel</span>
-                            <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">Node.js</span>
-                            <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium">Express.js</span>
-                            <span class="bg-purple-50 text-purple-800 px-2 py-0.5 rounded font-medium">GraphQL</span>
-                            <span class="bg-yellow-50 text-yellow-800 px-2 py-0.5 rounded font-medium">RESTful APIs</span>
-                            <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">WebSocket</span>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span
+                                class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-bold">Solana</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold">Rust</span>
+                            <span
+                                class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-bold">React</span>
                         </div>
+                        <h3 class="text-2xl font-bold mb-2">Sparkium</h3>
+                        <p class="text-gray-500 text-sm max-w-md">
+                            A centralized exchange simulation on Solana. Winner of the Radar Hackathon. Allows users to
+                            experience trading mechanics in a risk-free environment.
+                        </p>
                     </div>
-                    <div>
-                        <h4 class="font-doodle text-blue-600 mb-2 text-base">Frontend</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-green-50 text-green-800 px-2 py-0.5 rounded font-medium">Vue.js</span>
-                            <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-medium">Nuxt.js</span>
-                            <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">Vite</span>
-                            <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">Webpack</span>
-                            <span class="bg-orange-50 text-orange-700 px-2 py-0.5 rounded font-medium">Tailwind CSS</span>
-                            <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Bootstrap</span>
-                            <span class="bg-pink-50 text-pink-700 px-2 py-0.5 rounded font-medium">SASS/SCSS</span>
-                            <span class="bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-medium">Vuetify</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-doodle text-purple-600 mb-2 text-base">Database & Caching</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-purple-50 text-purple-800 px-2 py-0.5 rounded font-medium">MongoDB</span>
-                            <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">MySQL</span>
-                            <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium">PostgreSQL</span>
-                            <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Redis</span>
-                            <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">SQLite</span>
-                            <span class="bg-orange-50 text-orange-800 px-2 py-0.5 rounded font-medium">Elasticsearch</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-doodle text-pink-600 mb-2 text-base">Cloud & Infrastructure</h4>
-                        <div class="flex flex-wrap gap-1">
-                            <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Firebase</span>
-                            <span class="bg-green-50 text-green-800 px-2 py-0.5 rounded font-medium">Supabase</span>
-                            <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">Docker</span>
-                            <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">Portainer</span>
-                            <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Grafana</span>
-                            <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">Nginx</span>
-                            <span class="bg-yellow-50 text-yellow-800 px-2 py-0.5 rounded font-medium">CI/CD</span>
-                            <span class="bg-orange-50 text-orange-800 px-2 py-0.5 rounded font-medium">ChirpStack</span>
-                            <span class="bg-purple-50 text-purple-800 px-2 py-0.5 rounded font-medium">Matrix</span>
-                        </div>
-                    </div>
+                    <a href="https://sparkium.app/"
+                        class="inline-flex items-center gap-2 font-bold text-sm mt-6 group-hover:text-accent transition"
+                        target="_blank">
+                        View Project <span class="text-lg">→</span>
+                    </a>
+                </div>
+                <div
+                    class="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-tl from-indigo-500 to-transparent rounded-full opacity-10 group-hover:scale-150 transition duration-500">
                 </div>
             </div>
 
+            <!-- Vitruvians Tools -->
+            <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-purple-100 text-purple-700 p-3 rounded-xl">
+                        <span class="text-4xl">🛠️</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Vitruvians Tools</h3>
+                <p class="text-xs text-gray-500 mb-3">Comprehensive toolset for NFT holders. Includes rarity sniper,
+                    portfolio tracker, and staking interfaces. Hackathon winning project.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Node.js</span>
+                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded">Web3.js</span>
+                </div>
+                <a href="https://x.com/OasisProtocol/status/1533871350045192192"
+                    class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">Hackathon Winner
+                    -></a>
+            </div>
+
+            <!-- Erobe Game -->
+            <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-green-100 text-green-700 p-3 rounded-xl">
+                        <span class="text-4xl">🌟</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Sparkium</h3>
+                <p class="text-xs text-gray-500 mb-3">The Sparkium Program is a Solana-based decentralized application
+                    that allows users to create and manage campaigns for content submission and approval</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                    <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">VUE.js</span>
+                    <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">RUST</span>
+                    <span class="bg-gray-200 text-gray-800 px-2 py-1 rounded">TS</span>
+                </div>
+                <a href="https://x.com/sparkiumapp"
+                    class="text-brandBlack font-bold hover:text-accent hover:underline">View</a>
+            </div>
+
+            <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-orange-100 text-red-700 p-3 rounded-xl">
+                        <span class="text-4xl">🏆</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold mb-1">p402</h3>
+                <p class="text-xs text-gray-500 mb-3">Monetize Your APIs with Solana Payments. Connect your Solana
+                    wallet, register your APIs, and start earning SOL for every request.
+                    No setup fees, no monthly subscriptions - just pay-per-use on Solana.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Vue</span>
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Cloudworker</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
+                </div>
+                <a href="https://p402.store/#/" class="text-brandBlack font-bold hover:text-accent hover:underline"
+                    target="_blank">View detail</a>
+            </div>
+
+
+            <!-- Suiwatch -->
+            <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-red-100 text-red-700 p-3 rounded-xl">
+                        <span class="text-4xl">🏆</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Suiwatch</h3>
+                <p class="text-xs text-gray-500 mb-3">A portfolio tracking tool for Sui blockchain assets. Built with
+                    Vue for real-time updates.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Vue</span>
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Cloudworker</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
+                </div>
+                <a href="https://x.com/omr_dev/status/1982569878721835305?s=20"
+                    class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">Hackathon Winner
+                    -></a>
+            </div>
+
+            <!-- Minihub -->
+            <div class="bg-card rounded-3xl p-8 border border-gray-100 hover-card group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="bg-red-100 text-red-700 p-3 rounded-xl">
+                        <span class="text-4xl">🏆</span>
+                    </div>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Minihub</h3>
+                <p class="text-xs text-gray-500 mb-3">A HR smart contract based recruitment platform on Sui blockchain.
+                    Built with React and Move.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-bold mb-4">
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded">React</span>
+                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded">Move</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">JS</span>
+                </div>
+                <a href="https://x.com/WhiteMoonDev/status/1992883818982953223?s=20"
+                    class="text-brandBlack font-bold hover:text-accent hover:underline" target="_blank">Hackathon Winner
+                    -></a>
+            </div>
+
+            <!-- 100+ Websites -->
+            <div
+                class="span-2 bg-accent/5 rounded-3xl p-8 border border-accent/10 flex items-center justify-around text-center relative overflow-hidden">
+                <div
+                    class="absolute -left-10 top-0 w-32 h-32 border-4 border-dashed border-accent/20 rounded-full animate-[spin_10s_linear_infinite]">
+                </div>
+                <div class="relative z-10">
+                    <div class="text-4xl font-extrabold text-accent">100+</div>
+                    <div class="text-xs text-gray-600 font-bold uppercase mt-1">Web Projects</div>
+                    <p class="text-xs text-gray-500 mt-2">Corporate websites, E-commerce solutions, and custom CMS
+                        panels built for various clients over 4 years.</p>
+                </div>
+                <div class="w-px h-12 bg-gray-300"></div>
+                <div class="relative z-10">
+                    <div class="text-4xl font-extrabold text-dark">12</div>
+                    <div class="text-xs text-gray-600 font-bold uppercase mt-1">Years Experience</div>
+                </div>
+                <div class="w-px h-12 bg-gray-300"></div>
+                <div class="relative z-10">
+                    <div class="text-4xl font-extrabold text-dark">5</div>
+                    <div class="text-xs text-gray-600 font-bold uppercase mt-1">Hackathon Wins</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Minimal Tech Stack Grid -->
+        <div class="span-2 mb-6 bg-card rounded-3xl p-8 border border-gray-100 hover-card group mt-5">
+            <h3 class="text-xl font-doodle text-accent mb-4">Technologies & Frameworks</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div>
+                    <h4 class="font-doodle text-orange-600 mb-2 text-base">Backend</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="bg-orange-50 text-orange-800 px-2 py-0.5 rounded font-medium">Laravel</span>
+                        <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">Node.js</span>
+                        <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium">Express.js</span>
+                        <span class="bg-purple-50 text-purple-800 px-2 py-0.5 rounded font-medium">GraphQL</span>
+                        <span class="bg-yellow-50 text-yellow-800 px-2 py-0.5 rounded font-medium">RESTful APIs</span>
+                        <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">WebSocket</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-doodle text-blue-600 mb-2 text-base">Frontend</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="bg-green-50 text-green-800 px-2 py-0.5 rounded font-medium">Vue.js</span>
+                        <span class="bg-green-50 text-green-700 px-2 py-0.5 rounded font-medium">Nuxt.js</span>
+                        <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">Vite</span>
+                        <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">Webpack</span>
+                        <span class="bg-orange-50 text-orange-700 px-2 py-0.5 rounded font-medium">Tailwind CSS</span>
+                        <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Bootstrap</span>
+                        <span class="bg-pink-50 text-pink-700 px-2 py-0.5 rounded font-medium">SASS/SCSS</span>
+                        <span class="bg-purple-50 text-purple-700 px-2 py-0.5 rounded font-medium">Vuetify</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-doodle text-purple-600 mb-2 text-base">Database & Caching</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="bg-purple-50 text-purple-800 px-2 py-0.5 rounded font-medium">MongoDB</span>
+                        <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">MySQL</span>
+                        <span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded font-medium">PostgreSQL</span>
+                        <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Redis</span>
+                        <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">SQLite</span>
+                        <span class="bg-orange-50 text-orange-800 px-2 py-0.5 rounded font-medium">Elasticsearch</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-doodle text-pink-600 mb-2 text-base">Cloud & Infrastructure</h4>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Firebase</span>
+                        <span class="bg-green-50 text-green-800 px-2 py-0.5 rounded font-medium">Supabase</span>
+                        <span class="bg-blue-50 text-blue-800 px-2 py-0.5 rounded font-medium">Docker</span>
+                        <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">Portainer</span>
+                        <span class="bg-pink-50 text-pink-800 px-2 py-0.5 rounded font-medium">Grafana</span>
+                        <span class="bg-gray-50 text-gray-800 px-2 py-0.5 rounded font-medium">Nginx</span>
+                        <span class="bg-yellow-50 text-yellow-800 px-2 py-0.5 rounded font-medium">CI/CD</span>
+                        <span class="bg-orange-50 text-orange-800 px-2 py-0.5 rounded font-medium">ChirpStack</span>
+                        <span class="bg-purple-50 text-purple-800 px-2 py-0.5 rounded font-medium">Matrix</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-     <section class="py-10 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-doodle text-center mb-10"><span class="text-dark">My</span> <span class="text-accent">Journey</span></h2>
+    <section class="py-10 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-doodle text-center mb-10"><span class="text-dark">My</span> <span
+                class="text-accent">Journey</span></h2>
         <div class="flex">
             <!-- Timeline -->
             <div class="flex flex-col items-center mr-6">
@@ -356,61 +428,157 @@ No setup fees, no monthly subscriptions - just pay-per-use on Solana.</p>
             <div class="flex-1 flex flex-col gap-8">
                 <!-- Geniousoft Card -->
                 <div class="relative bg-white border border-gray-300 rounded-xl shadow-doodle p-6">
-                    <span class="absolute left-0 bottom-0 w-full h-3 bg-accent rounded-b-xl -z-10" style="transform: skew(-2deg);"></span>
+                    <span class="absolute left-0 bottom-0 w-full h-3 bg-accent rounded-b-xl -z-10"
+                        style="transform: skew(-2deg);"></span>
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="text-xl font-bold">Software Engineer</h3>
                         <span class="bg-black text-accent text-xs font-bold px-3 py-1 rounded">2022 - Present</span>
                     </div>
                     <div class="text-base text-gray-700 font-bold mb-1">@ Geniousoft</div>
-                    <p class="text-gray-600 text-sm">Developing scalable web applications and software solutions. Active role in backend architecture and frontend integration.</p>
+                    <p class="text-gray-600 text-sm">Developing scalable web applications and software solutions. Active
+                        role in backend architecture and frontend integration.</p>
                 </div>
                 <!-- Freelance Card -->
                 <div class="relative bg-white border border-gray-300 rounded-xl shadow-doodle p-6">
-                    <span class="absolute left-0 bottom-0 w-full h-3 bg-gray-300 rounded-b-xl -z-10" style="transform: skew(-2deg);"></span>
+                    <span class="absolute left-0 bottom-0 w-full h-3 bg-gray-300 rounded-b-xl -z-10"
+                        style="transform: skew(-2deg);"></span>
                     <div class="flex justify-between items-center mb-2">
                         <h3 class="text-xl font-bold">Full Stack Developer</h3>
                         <span class="bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">2020 - 2022</span>
                     </div>
                     <div class="text-base text-gray-700 font-bold mb-1">@ Freelance</div>
-                    <p class="text-gray-600 text-sm">Delivered 100+ web projects for various clients. Specialized in PHP, Laravel, and custom CMS solutions. Mobile game development with Unity/C#.</p>
+                    <p class="text-gray-600 text-sm">Delivered 100+ web projects for various clients. Specialized in
+                        PHP, Laravel, and custom CMS solutions. Mobile game development with Unity/C#.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Events Section -->
+    <section class="py-10 px-6 mx-auto">
+        <h2 class="text-3xl font-doodle text-center mb-8"><span class="text-dark">Events</span></h2>
+        <!-- Swiper Slider for Events -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">I completed a very productive bootcamp today. Thanks to the <a href="https://twitter.com/buildermare?ref_src=twsrc%5Etfw">@buildermare</a> team and <a href="https://twitter.com/SuiFoundation?ref_src=twsrc%5Etfw">@SuiFoundation</a>. Gn 👏🏻👏🏻👏🏻<br><br>Keep Build_ 🦾🫂 <a href="https://t.co/ITSW2UWOLZ">pic.twitter.com/ITSW2UWOLZ</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1991905881684947352?ref_src=twsrc%5Etfw">November 21, 2025</a>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">It was nice to get together at the <a href="https://twitter.com/JupiterExchange?ref_src=twsrc%5Etfw">@JupiterExchange</a> event as a <a href="https://twitter.com/SuperteamTR?ref_src=twsrc%5Etfw">@SuperteamTR</a> . It’s a real privilege to be in this community 😇 and special thx for <a href="https://twitter.com/BlockofChain?ref_src=twsrc%5Etfw">@BlockofChain</a> for explaining what is the jupnet <a href="https://t.co/TUO560R2r2">pic.twitter.com/TUO560R2r2</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1884320177099247722?ref_src=twsrc%5Etfw">January 28, 2025</a>
+                    </blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">There was a very important moment for me today,I had the opportunity to meet <a href="https://twitter.com/deanmlittle?ref_src=twsrc%5Etfw">@deanmlittle</a> . I hope I can develop with sbpf soon.... Continue to meet the legends and protect against quantum’s 🤗🤗🤗 <a href="https://t.co/jq28NDO6lL">pic.twitter.com/jq28NDO6lL</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1883585576408162736?ref_src=twsrc%5Etfw">January 26, 2025</a></blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today we had a <a href="https://twitter.com/superteam?ref_src=twsrc%5Etfw">@superteam</a> meeting with young developers in Mersin. We made presentations about Superteam, <a href="https://twitter.com/search?q=%24sol&amp;src=ctag&amp;ref_src=twsrc%5Etfw">$sol</a> and AI. It was a nice meeting event. Keep building together <a href="https://twitter.com/SuperteamTR?ref_src=twsrc%5Etfw">@SuperteamTR</a> <a href="https://twitter.com/hashtag/solana?src=hash&amp;ref_src=twsrc%5Etfw">#solana</a> <a href="https://t.co/B8yI8xwZml">pic.twitter.com/B8yI8xwZml</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1870530942118563987?ref_src=twsrc%5Etfw">December 21, 2024</a></blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today, we had a great call IRL event at Mersin as <a href="https://twitter.com/SuperteamTR?ref_src=twsrc%5Etfw">@SuperteamTR</a> . We gave information about some <a href="https://twitter.com/hashtag/solana?src=hash&amp;ref_src=twsrc%5Etfw">#solana</a> SDKs with university students. We examined <a href="https://twitter.com/JupiterExchange?ref_src=twsrc%5Etfw">@JupiterExchange</a> APIs. 🎊<br><br>See you soon next event 🚀🚀🚀 <a href="https://t.co/bHBYNNXLFi">pic.twitter.com/bHBYNNXLFi</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1864742745874514191?ref_src=twsrc%5Etfw">December 5, 2024</a></blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today I taught developers how to chew glass 👻 it was a very enjoyable workshop, they uploaded their first contract to the devnet. Today, 10 developers in Mersin, southern Turkey, deploy on <a href="https://twitter.com/hashtag/Solana?src=hash&amp;ref_src=twsrc%5Etfw">#Solana</a>. <a href="https://twitter.com/SuperteamTR?ref_src=twsrc%5Etfw">@SuperteamTR</a> Thanks for the opportunity 🔥 <a href="https://t.co/pMOQY6B0VW">pic.twitter.com/pMOQY6B0VW</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1755702553461833781?ref_src=twsrc%5Etfw">February 8, 2024</a></blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">5th Place Project Name: Sui Watch<br><br>Description: The Future of Sui Portfolio Tracking<br><br>Team Members: Berkay Öztunç, Ömer Temel, Utku Esen <a href="https://t.co/2zO45JTFej">pic.twitter.com/2zO45JTFej</a></p>&mdash; BuilderMare (@buildermare) <a href="https://twitter.com/buildermare/status/1985374715205259463">November 3, 2025</a></blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are in Mersin 💧<br><br>Onboarding teachers to recruit the next thousands of students to SUI MOVE ecosystem<br><br>MOVE can be added into the official school lectures 🌊 <a href="https://t.co/uVWwK3NIPq">pic.twitter.com/uVWwK3NIPq</a></p>&mdash; BuilderMare (@buildermare) <a href="https://twitter.com/buildermare/status/1966815798413975826?ref_src=twsrc%5Etfw">September 13, 2025</a></blockquote>
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are growing every day. Happy 2nd year <a href="https://twitter.com/SuperteamTR?ref_src=twsrc%5Etfw">@SuperteamTR</a> <a href="https://t.co/Zqmxuf7Z3F">pic.twitter.com/Zqmxuf7Z3F</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1862581708941295941?ref_src=twsrc%5Etfw">November 29, 2024</a></blockquote>
+                </div>
+
+                <div class="swiper-slide flex justify-center items-center">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are growing every day. Happy 2nd year <a href="https://twitter.com/SuperteamTR?ref_src=twsrc%5Etfw">@SuperteamTR</a> <a href="https://t.co/Zqmxuf7Z3F">pic.twitter.com/Zqmxuf7Z3F</a></p>&mdash; WhiteMoon D. (@WhiteMoonDev) <a href="https://twitter.com/WhiteMoonDev/status/1862581708941295941?ref_src=twsrc%5Etfw">November 29, 2024</a></blockquote> 
+                </div>
+                   <div class="swiper-slide flex justify-center items-center">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hacker House Istanbul has come to an end after 5 days full of learning, networking, and growth. ✨<br><br>We will continue to work hard to make Turkey a hub for web3 devs. 🦾 <br><br>Thank you to everyone who attended and made <a href="https://twitter.com/hashtag/HackerHouseIstanbul?src=hash&amp;ref_src=twsrc%5Etfw">#HackerHouseIstanbul</a> a huge success! 🔥<br><br>Until next time! 👋 🥹 <a href="https://t.co/deteKG4qTe">pic.twitter.com/deteKG4qTe</a></p>&mdash; Superteam Turkey 🇹🇷 (@SuperteamTR) <a href="https://twitter.com/SuperteamTR/status/1622303863360348160?ref_src=twsrc%5Etfw">February 5, 2023</a></blockquote> 
+                </div>
+                   <div class="swiper-slide flex justify-center items-center">
+<blockquote class="twitter-tweet"><p lang="tr" dir="ltr">Superteam TR memberlarımız <a href="https://twitter.com/0xMert_?ref_src=twsrc%5Etfw">@0xMert_</a> ile bir araya geldi! 🚀<br><br>🥳 Güzel bir akşam yemeği sonrası, Member’larımızın geliştirdiği projeleri ve Türkiye’yi web3 ekosisteminde nasıl ileriye taşıyabileceğimizi konuştuk!<br><br>Büyük haberler yolda! 🔥 <a href="https://t.co/JXTA7XclOU">pic.twitter.com/JXTA7XclOU</a></p>&mdash; Superteam Turkey 🇹🇷 (@SuperteamTR) <a href="https://twitter.com/SuperteamTR/status/1813619678583181534?ref_src=twsrc%5Etfw">July 17, 2024</a></blockquote> 
+                </div>  
+                <div class="swiper-slide flex justify-center items-center">
+<blockquote class="twitter-tweet"><p lang="tr" dir="ltr">Superteam TR memberlarımız <a href="https://twitter.com/0xMert_?ref_src=twsrc%5Etfw">@0xMert_</a> ile bir araya geldi! 🚀<br><br>🥳 Güzel bir akşam yemeği sonrası, Member’larımızın geliştirdiği projeleri ve Türkiye’yi web3 ekosisteminde nasıl ileriye taşıyabileceğimizi konuştuk!<br><br>Büyük haberler yolda! 🔥 <a href="https://t.co/JXTA7XclOU">pic.twitter.com/JXTA7XclOU</a></p>&mdash; Superteam Turkey 🇹🇷 (@SuperteamTR) <a href="https://twitter.com/SuperteamTR/status/1813619678583181534?ref_src=twsrc%5Etfw">July 17, 2024</a></blockquote> 
+                </div>
+
+            </div>
+            <!-- Slider Pagination -->
+        </div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var swiper = new Swiper('.mySwiper', {
+                    loop: true,
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                });
+            });
+        </script>
+    </section>
     <!-- Footer -->
     <footer class="py-12 mt-10 text-center relative overflow-hidden">
         <div class="max-w-xl mx-auto px-6 relative z-10">
-            <h2 class="text-2xl font-bold mb-6">Have an idea? <br> Let's build something <span class="font-doodle text-accent">amazing.</span></h2>
-           
+            <h2 class="text-2xl font-bold mb-6">Have an idea? <br> Let's build something <span
+                    class="font-doodle text-accent">amazing.</span></h2>
+
             <div class="mt-8 flex justify-center gap-6 text-gray-400">
                 <div class="flex items-center gap-2">
-                    <a href="https://www.linkedin.com/in/berkayoztunc/" class="flex items-center gap-2 text-blue-700 font-bold hover:underline">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <a href="https://www.linkedin.com/in/berkayoztunc/"
+                        class="flex items-center gap-2 text-blue-700 font-bold hover:underline">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
                         LinkedIn
                     </a>
-                    <a href="https://twitter.com/Berkayoztunc" class="flex items-center gap-2 text-blue-500 font-bold hover:underline">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.69.11 1.02C7.69 5.4 4.07 3.7 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 0 1 .96 6.1v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.15 2.97 4.05 3A9.06 9.06 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 23 3z"/></svg>
+                    <a href="https://twitter.com/Berkayoztunc"
+                        class="flex items-center gap-2 text-blue-500 font-bold hover:underline">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.09 9.09 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.69.11 1.02C7.69 5.4 4.07 3.7 1.64 1.15c-.38.65-.6 1.4-.6 2.2 0 1.52.77 2.86 1.94 3.65A4.48 4.48 0 0 1 .96 6.1v.06c0 2.13 1.52 3.91 3.54 4.31-.37.1-.76.16-1.16.16-.28 0-.55-.03-.81-.08.55 1.72 2.15 2.97 4.05 3A9.06 9.06 0 0 1 0 19.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.84-6.88 12.84-12.84 0-.2 0-.39-.01-.58A9.22 9.22 0 0 0 23 3z" />
+                        </svg>
                         Twitter
                     </a>
-                    <a href="https://github.com/berkayoztunc" class="flex items-center gap-2 text-gray-800 font-bold hover:underline">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <a href="https://github.com/berkayoztunc"
+                        class="flex items-center gap-2 text-gray-800 font-bold hover:underline">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
                         Github
                     </a>
                     <p class="mt-2 text-sm text-gray-700 flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm-1-13v6l5.25 3.15.75-1.23-4.5-2.67V7h-1z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm-1-13v6l5.25 3.15.75-1.23-4.5-2.67V7h-1z" />
+                        </svg>
                         Telegram: <span class="font-bold">@whitemoondev</span>
                     </p>
                 </div>
             </div>
-            
+
             <p class="mt-10 text-xs text-gray-400">© 2024 Berkay Öztunç.</p>
         </div>
-        
+
         <!-- Bottom Doodle -->
-        <svg class="absolute bottom-0 left-0 w-full h-12 text-gray-100" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="currentColor"></path>
+        <svg class="absolute bottom-0 left-0 w-full h-12 text-gray-100" viewBox="0 0 1200 120"
+            preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" fill="currentColor"></path>
         </svg>
     </footer>
 
 </body>
+
 </html>
